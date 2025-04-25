@@ -26,20 +26,31 @@
 Telegram Bot to store Posts and Documents and it can Access by Special Links.
 I Guess This Will Be Usefull For Many People.....😇. 
 
-##
-
-**If you need any more modes in repo or If you find out any bugs, mention in [@codexbotzsupport ](https://www.telegram.dog/codexbotzsupport)**
-
-**Make sure to see [contributing.md](https://github.com/CodeXBotz/File-Sharing-Bot/blob/main/CONTRIBUTING.md) for instructions on contributing to the project!**
-
-
 
 ### Features
 - Fully customisable.
 - Customisable welcome & Forcesub messages.
 - More than one Posts in One Link.
 - Can be deployed on heroku directly.
+- Protect Content to Prevent Forwarding
+- Auto-Delete Files After a Configurable Time
 
+## What’s Next
+
+These features are in the pipeline, and contributions from the community are welcome!
+
+- [x] **Channel Join Request**  
+  Implement a feature that prompts users to join a specified Telegram channel before accessing the bot's functionalities.
+
+
+### How to Contribute
+1. Check the [contribution guidelines](https://github.com/CodeXBotz/File-Sharing-Bot/blob/main/CONTRIBUTING.md) for detailed instructions.  
+2. Pick any feature and create a new issue or comment on an existing one.  
+3. Discuss your implementation plan with maintainers to align your contributions with project goals.  
+
+We encourage all developers to contribute ideas, report bugs, and share improvements. Together, we can make this project even better! 🚀
+ 
+ 
 ### Setup
 
 - Add the bot to Database Channel with all permission
@@ -100,19 +111,24 @@ python3 main.py
 * `OWNER_ID` Must enter Your Telegram Id
 * `CHANNEL_ID` Your Channel ID eg:- -100xxxxxxxx
 * `DATABASE_URL` Your mongo db url
-* `DATABASE_NAME` Your mongo db session name
 * `ADMINS` Optional: A space separated list of user_ids of Admins, they can only create links
 * `START_MESSAGE` Optional: start message of bot, use HTML and <a href='https://github.com/codexbotz/File-Sharing-Bot/blob/main/README.md#start_message'>fillings</a>
+* `START_PIC` Optional: URL or file path of the image to be sent as the start message
 * `FORCE_SUB_MESSAGE`Optional:Force sub message of bot, use HTML and Fillings
 * `FORCE_SUB_CHANNEL` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
 * `PROTECT_CONTENT` Optional: True if you need to prevent files from forwarding
+* `AUTO_DELETE_TIME `  Set the time in seconds for automatic file deletion. Default is False, which disables auto-deletion.
+* `JOIN_REQUEST_ENABLED` Optional: Set to "True" to enable join request for the channel. Default is "False".
 
 ### Extra Variables
 
+* `AUTO_DELETE_MSG` put your custom deletion text if you want Setup Custom deletion messaeg,
+* `AUTO_DEL_SUCCESS_MSG` Set your custom success message for when the file is successfully deleted
 * `CUSTOM_CAPTION` put your Custom caption text if you want Setup Custom Caption, you can use HTML and <a href='https://github.com/CodeXBotz/File-Sharing-Bot/blob/main/README.md#custom_caption'>fillings</a> for formatting (only for documents)
 * `DISABLE_CHANNEL_BUTTON` Put True to Disable Channel Share Button, Default if False
 * `BOT_STATS_TEXT` put your custom text for stats command, use HTML and <a href='https://github.com/codexbotz/File-Sharing-Bot/blob/main/README.md#custom_stats'>fillings</a>
 * `USER_REPLY_TEXT` put your text to show when user sends any message, use HTML
+* `DATABASE_NAME` Your mongo db session name
 
 
 ### Fillings
