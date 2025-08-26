@@ -43,7 +43,7 @@
     },
     "START_MESSAGE": {
       "description": "Optional: start message of bot, use HTML parsemode format",
-      "value": "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link."
+      "value": "Hellos {first}\n\nI can store private files in Specified Channel and other users can access it from special link."
     },
     "START_PIC": {
       "description": "Optional: URL or file path of the image to be sent as the start message,",
