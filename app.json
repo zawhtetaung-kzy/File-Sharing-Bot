@@ -11,7 +11,7 @@
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Your Bot token, Get it from @Botfather",
-      "value": "8115044155:AAFTMu3ksGttNXdHjunSVet32QbajU-9gFI"
+      "value": "8246275392:AAEyZ68SQYdhx6JfbSMZ2GyHtSdQ3jeEFPA"
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
@@ -35,11 +35,11 @@
     },
     "CHANNEL_ID":{
       "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
-      "value": "-1002653852220"
+      "value": "-1002905615542"
     },
     "FORCE_SUB_CHANNEL":{
       "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "-1002653852220"
+      "value": "-1003077079889"
     },
     "START_MESSAGE": {
       "description": "Optional: start message of bot, use HTML parsemode format",
@@ -65,7 +65,7 @@
     },
     "AUTO_DELETE_TIME": {
       "description": "Set the time in seconds for the automatic deletion of the file. Default is 0, meaning auto-deletion is disabled unless specified.",
-      "value": "20"
+      "value": "0"
     },
     "AUTO_DELETE_MSG": {
       "description": "The custom message shown to the user before the file is automatically deleted. You can include a countdown with {time}.",
