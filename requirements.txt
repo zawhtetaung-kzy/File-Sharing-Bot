@@ -11,4 +11,4 @@ aiohttp
 #new
 pyrogram==2.0.106
 python-dotenv
-environ
+django-environ
