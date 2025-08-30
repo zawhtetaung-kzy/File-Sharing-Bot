@@ -1,4 +1,10 @@
 ### Python template
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
